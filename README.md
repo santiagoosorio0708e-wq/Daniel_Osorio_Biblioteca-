@@ -30,6 +30,8 @@ erDiagram
     LIBRO }|--|{ CATEGORIA : "pertenece a"
 ```
 
+![Modelo Conceptual](imagenes/modeloconceptual.png)
+
 ---
 
 ## 2. Modelo Lógico
@@ -95,6 +97,8 @@ erDiagram
     Categorias ||--o{ Libros_Categorias : "id_categoria"
 ```
 
+![Modelo Relacional](imagenes/modelorelacional.png)
+
 ---
 
 ## 3. Normalización (hasta 3FN)
@@ -121,15 +125,10 @@ El modelo físico corresponde a la creación real de la base de datos utilizando
 3. Validaciones de estado de los préstamos gestionadas a nivel lógico y con llaves foráneas.
 4. Asociación obligatoria de préstamos y reseñas mediante restricciones `NOT NULL` en las llaves foráneas de `id_usuario` e `id_libro`.
 
+![Modelo Físico](imagenes/modelofisico.png)
+
 ### Archivos Incluidos en este Repositorio:
 * `script_db.sql`: Contiene el script DDL con la creación de la base de datos, tablas y sus respectivas restricciones.
 * `consultas.sql`: Contiene 3 consultas básicas para probar el modelo propuesto.
 
 ---
-
-## Instrucciones para subir a GitHub
-1. Inicializa un repositorio Git local en tu carpeta: `git init`
-2. Agrega los archivos: `git add .`
-3. Haz un commit: `git commit -m "Entrega diseño de base de datos ReadFlow"`
-4. Ve a GitHub y crea un nuevo repositorio público llamado: **TuNombre_TuApellido_Biblioteca** (Reemplaza por tus datos reales).
-5. Conecta tu repositorio local con el de GitHub siguiendo las instrucciones que te da GitHub (ej. `git remote add origin ...` y `git push -u origin main`).
